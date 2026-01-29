@@ -1,0 +1,16 @@
+payout_logic:
+  revenue_weight: 0.60
+  quality_weight: 0.30
+  csat_weight: 0.10
+  budget_cap: 1000000
+
+scenarios:
+  Aggressive:
+    multiplier: 1.2
+    desc: "Reward top talent heavily to drive growth."
+  Balanced:
+    multiplier: 1.0
+    desc: "Standard market-rate distribution."
+  Conservative:
+    multiplier: 0.8
+    desc: "Cost-saving mode for budget constraints."
