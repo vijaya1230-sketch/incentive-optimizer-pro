@@ -106,15 +106,6 @@ with aud_col2:
             st.info(f"**ℹ️ STANDARD REVIEW**\n\n**Analysis:** {reasoning}\n\n**Action:** Standard approval.")
 
 # --- 8. FULL TABLE ---
-"""
-with st.expander("View Full Payout Ledger"):
-    st.dataframe(processed_df[['Employee_ID', 'Dept', 'Revenue_KPI', 'Quality_Score', 'Recommended_Payout']], use_container_width=True)
-
-st.caption("Agentic Logic Powered by Llama 3.3 • Inference via Groq LPU")
-"""
-
-# --- 8. FULL TABLE ---
-# --- 8. FULL TABLE ---
 with st.expander("View Full Payout Ledger"):
     # Defining columns to show
     ledger_cols = [
@@ -148,4 +139,5 @@ with st.sidebar:
         st.write("Auditor: Llama-3.3-70B Active")
         st.write("Infrastructure: Groq LPU Sub-second")
         status.update(label="✅ System Online", state="complete")
+
         
